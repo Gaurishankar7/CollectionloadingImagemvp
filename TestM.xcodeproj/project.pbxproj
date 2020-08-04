@@ -13,6 +13,10 @@
 		203B1B5F24D68E5C00B67584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B1B5D24D68E5C00B67584 /* Main.storyboard */; };
 		203B1B6124D68E6400B67584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203B1B6024D68E6400B67584 /* Assets.xcassets */; };
 		203B1B6424D68E6400B67584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B1B6224D68E6400B67584 /* LaunchScreen.storyboard */; };
+		203B1B6F24D6B15200B67584 /* PicsumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B1B6E24D6B15200B67584 /* PicsumModel.swift */; };
+		203B1B7124D6B16200B67584 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B1B7024D6B16200B67584 /* APIClient.swift */; };
+		203B1B7324D6B17300B67584 /* PicsumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B1B7224D6B17300B67584 /* PicsumPresenter.swift */; };
+		203B1B7524D6D67900B67584 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203B1B7424D6D67900B67584 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		203B1B6024D68E6400B67584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203B1B6324D68E6400B67584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203B1B6524D68E6400B67584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203B1B6E24D6B15200B67584 /* PicsumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumModel.swift; sourceTree = "<group>"; };
+		203B1B7024D6B16200B67584 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		203B1B7224D6B17300B67584 /* PicsumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumPresenter.swift; sourceTree = "<group>"; };
+		203B1B7424D6D67900B67584 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		203B1B5624D68E5C00B67584 /* TestM */ = {
 			isa = PBXGroup;
 			children = (
+				203B1B6D24D6B12700B67584 /* Model */,
+				203B1B6C24D6B11C00B67584 /* API Client */,
+				203B1B6B24D6B10900B67584 /* Presenter */,
 				203B1B5724D68E5C00B67584 /* AppDelegate.swift */,
 				203B1B5924D68E5C00B67584 /* SceneDelegate.swift */,
 				203B1B5B24D68E5C00B67584 /* ViewController.swift */,
+				203B1B7424D6D67900B67584 /* Cell.swift */,
 				203B1B5D24D68E5C00B67584 /* Main.storyboard */,
 				203B1B6024D68E6400B67584 /* Assets.xcassets */,
 				203B1B6224D68E6400B67584 /* LaunchScreen.storyboard */,
 				203B1B6524D68E6400B67584 /* Info.plist */,
 			);
 			path = TestM;
+			sourceTree = "<group>";
+		};
+		203B1B6B24D6B10900B67584 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				203B1B7224D6B17300B67584 /* PicsumPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		203B1B6C24D6B11C00B67584 /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				203B1B7024D6B16200B67584 /* APIClient.swift */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
+		203B1B6D24D6B12700B67584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				203B1B6E24D6B15200B67584 /* PicsumModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +176,10 @@
 			files = (
 				203B1B5C24D68E5C00B67584 /* ViewController.swift in Sources */,
 				203B1B5824D68E5C00B67584 /* AppDelegate.swift in Sources */,
+				203B1B7524D6D67900B67584 /* Cell.swift in Sources */,
+				203B1B6F24D6B15200B67584 /* PicsumModel.swift in Sources */,
+				203B1B7324D6B17300B67584 /* PicsumPresenter.swift in Sources */,
+				203B1B7124D6B16200B67584 /* APIClient.swift in Sources */,
 				203B1B5A24D68E5C00B67584 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
