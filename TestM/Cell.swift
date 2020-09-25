@@ -21,6 +21,7 @@ class Cell: UICollectionViewCell {
 
         imageView = UIImageView(frame: self.bounds)
         imageView?.backgroundColor = UIColor.white
+        imageView?.image = UIImage(named: "loading.png")
         contentView.addSubview(imageView!)
         label = UILabel(frame: CGRect(x: 10, y: (imageView?.frame.maxX)! + 20, width: self.bounds.width - 20, height: 20))
         label?.text = "Hello"
